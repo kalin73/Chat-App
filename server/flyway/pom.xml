@@ -23,23 +23,23 @@
             <artifactId>flyway-core</artifactId>
         </dependency>
     </dependencies>
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-maven-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>db</id>
-                    <configuration>
-                        <locations>filesystem:/src/main/resources/db/migrations/</locations>
-                        <url>${DB_URL}</url>
-                        <user>${DB_USERNAME}</user>
-                        <password>${DB_PASSWORD}</password>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>db</id>
+                        <configuration>
+                            <locations>filesystem:/src/main/resources/db/migration/</locations>
+                            <url>${DB_URL}</url>
+                            <user>${DB_USERNAME}</user>
+                            <password>${DB_PASSWORD}</password>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

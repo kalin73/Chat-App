@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "users")
 @Getter
@@ -21,4 +23,7 @@ public class UserEntity extends BaseEntity{
 
     @Column(nullable = false)
     private String password;
+
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
 }
