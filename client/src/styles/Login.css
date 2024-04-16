@@ -1,0 +1,32 @@
+.login-form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
+    margin: 2rem;
+}
+
+.login-form input{
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #DCDCDC;
+    border-radius: 15px;
+}
+
+.login-form button{
+    width: 42%;
+    padding: 12px;
+    background-color: #1DC802;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.login-form button:hover{
+    background-color: #049CD1;
+    color: #FFF;
+}
